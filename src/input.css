@@ -14,11 +14,3 @@
     --color-red-400: #FA5959;
 }
 
-.dotted-border {
-    background-image:
-                linear-gradient(to right, #5B6074 10%, 
-                  rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 5px 10px;
-    background-repeat: repeat-x;
-}

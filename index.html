@@ -12,7 +12,7 @@
 </head>
 <body class="font-(family-name:--font-rubik)">
   <div class="container flex flex-col gap-10 mb-100 items-center">
-    <header class="header flex justify-between items-center p-8">
+    <header class="header w-full flex justify-between items-center p-8">
       <img class="header__img" src="images/logo-bookmark.svg" alt="bookmark logo">
       <img class="header__hamburger" src="images/icon-hamburger.svg" alt="hamburger menu">
     </header>
@@ -88,7 +88,7 @@
               <h3 class="extensions-card__title text-2xl font-medium">Add to Chrome</h3>
               <p class="extensions-card__copy text-grey-600/60">Minimum version 62</p>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <a class="extensions-card__btn py-3 px-6 mb-4 rounded-md bg-blue-600 text-white font-medium" tabindex="0" href="">Add & Install Extension</a> 
+              <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white font-medium" tabindex="0" href="">Add & Install Extension</a> 
             </div>
 
             <!-- Card 2 -->
@@ -98,7 +98,7 @@
               <h3 class="extensions-card__title text-2xl font-medium">Add to Firefox</h3>
               <p class="extensions-card__copy text-grey-600/60">Minimum version 55</p>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <a class="extensions-card__btn py-3 px-6 rounded-md bg-blue-600 text-white font-medium" tabindex="0" href="">Add & Install Extension</a>
+              <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white font-medium" tabindex="0" href="">Add & Install Extension</a>
             </div>
 
             <!-- Card 3 -->
@@ -108,10 +108,74 @@
               <h3 class="extensions-card__title text-2xl font-medium">Add to Opera</h3>
               <p class="extensions-card__copy text-grey-600/60">Minimum version 46</p>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <a class="extensions-card__btn py-3 px-6 rounded-md bg-blue-600 text-white font-medium" tabindex="0" href="">Add & Install Extension</a>
+              <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white font-medium" tabindex="0" href="">Add & Install Extension</a>
             </div>
 
           </div>
+        </section>
+
+          <!-- FAQ -->
+
+        <section class="faq w-4/5 flex flex-col gap-10">
+          <div class="faq__head flex flex-col gap-8 text-center">
+            <h2 class="faq-head__title text-4xl/10 font-medium">Frequently Asked Questions</h2>
+            <p class="faq-head__copy text-grey-600/60">Here are some of our FAQs. If you have any other questions you’d like 
+                answered please feel free to email us.</p>
+          </div>
+          <!-- Accordion -->
+          <div class="accordion__container">
+            <div class="faq__accordion">
+              <div class="accordion__tab flex justify-between items-center p-1">
+                <h3 class="tab__title">What is Bookmark?</h3>
+                <img class="tab__open" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+              </div>
+              <div class="accordion__panel">
+                <p class="panel__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+              </div>
+            </div>
+
+            <div class="faq__accordion">
+              <div class="accordion__tab flex justify-between items-center p-1">
+                <h3 class="tab__title">How can I request a new browser?</h3>
+                <img class="tab__open" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+              </div>
+              <div class="accordion__panel">
+                <p class="panel__copy">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+              </div>
+            </div>
+
+            <div class="faq__accordion">
+              <div class="accordion__tab flex justify-between items-center p-1">
+                <h3 class="tab__title">Is there a mobile app?</h3>
+                <img class="tab__open" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+              </div>
+              <div class="accordion__panel">
+                <p class="panel__copy">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                    sollicitudin ex et ultricies bibendum.</p>
+              </div>
+            </div>
+
+            <div class="faq__accordion">
+              <div class="accordion__tab flex justify-between items-center p-1">
+                <h3 class="tab__title">What about other Chromium browsers?</h3>
+                <img class="tab__open hover:pointer" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+              </div>
+              <div class="accordion__panel">
+                <p class="panel__copy">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                    vitae neque eget nisl gravida pellentesque non ut velit.</p>
+              </div>
+            </div>
+          </div>
+
         </section>
     </main>
   </div>
@@ -132,65 +196,19 @@
   Easily share your bookmarks and collections with others. Create a shareable 
   link that you can send at the click of a button.
 
-  More Info
+  More Info-->
 
+ 
   
 
+ 
   
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us. -->
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
 
   More Info
 
   35,000+ already joined
 
-  Stay up-to-date with what we’re doing
+  Stay up-to-date with what we&#39;re doing
 
   Contact Us
 
