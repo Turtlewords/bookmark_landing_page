@@ -16,7 +16,7 @@
       <img class="header__img" src="images/logo-bookmark.svg" alt="bookmark logo">
       <img class="header__hamburger" src="images/icon-hamburger.svg" alt="hamburger menu">
     </header>
-    <main class="main flex flex-col gap-10">
+    <main class="main flex flex-col gap-16">
 
         <!-- Hero -->
 
@@ -37,15 +37,15 @@
       </section>
 
           <!-- Features -->
-      <section class="features">
-        <div class="features-content flex flex-col gap-10 text-center">
-          <h2 class="features-content__title text-4xl/10 font-medium">Features</h2>
-          <p class="features-content__copy text-grey-600">Our aim is to make it quick and easy for you to access your favourite websites. 
+      <section class="features-head flex flex-col gap-10">
+        <div class="features-head__content flex flex-col gap-10 text-center">
+          <h2 class="features-head__content__title text-4xl/10 font-medium">Features</h2>
+          <p class="features-head__content__copy text-grey-600">Our aim is to make it quick and easy for you to access your favourite websites. 
             Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
         <div class="features-list">
           <div class="features-list__item border-b border-t border-grey-600">
-            <button class="feautures-list__btn p-4 w-full text-center hover:cursor-pointer focus:border-b-red-400">Simple Bookmarking</button>
+            <button class="feautures-list__btn p-4 w-full text-center hover:cursor-pointer">Simple Bookmarking</button>
           </div>
           <div class="features-list__item border-b border-grey-600">
             <button class="feautures-list__btn p-4  w-full h-full text-center hover:cursor-pointer">Speedy Searching</button>
@@ -55,6 +55,22 @@
           </div>
         </div>
       </section>
+
+      <!-- Organize -->
+       <section class="features flex flex-col gap-10">
+          <div class="features__img-container relative flex justify-center">
+            <img class="features__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-1.svg">
+            <div class="features__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
+          </div>
+          <div class="features__content flex flex-col gap-10 text-center">
+            <h1 class="features-content__title text-4xl/10 font-medium">Bookmark in one click</h1>
+            <p class="features-content__copy text-grey-600">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.</p>
+            <div class="features-content__buttons flex justify-center gap-4">
+              <a class="features-content-buttons--chrome p-3 rounded-md bg-blue-600 text-white font-medium" href="#">More Info</a>
+            </div>
+          </div>
+       </section>
     </main>
   </div>
   <!-- Features
@@ -77,12 +93,11 @@
   
   
 
-  Bookmark in one click
+  
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
+  
 
-  More Info
+  
 
   Intelligent search
 
