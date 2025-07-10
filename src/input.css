@@ -14,3 +14,6 @@
     --color-red-400: #FA5959;
 }
 
+.panel-transition {
+    transition: max-height 0.2s ease-out;
+}

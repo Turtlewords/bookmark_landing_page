@@ -116,7 +116,7 @@
 
           <!-- FAQ -->
 
-        <section class="faq w-4/5 flex flex-col gap-10">
+        <section class="faq w-4/5 flex flex-col gap-10 mb-10">
           <div class="faq__head flex flex-col gap-8 text-center">
             <h2 class="faq-head__title text-4xl/10 font-medium">Frequently Asked Questions</h2>
             <p class="faq-head__copy text-grey-600/60">Here are some of our FAQs. If you have any other questions you’d like 
@@ -124,60 +124,70 @@
           </div>
           <!-- Accordion -->
           <div class="accordion__container">
-            <div class="faq__accordion">
-              <div class="accordion__tab flex justify-between items-center p-1">
+            <div class="faq__accordion border-b border-b-grey-600">
+              <div class="accordion__tab flex justify-between items-center py-4">
                 <h3 class="tab__title">What is Bookmark?</h3>
-                <img class="tab__open" src="images/icon-arrow.svg" alt="open tab icon">
-                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+                <img class="tab__open hover:cursor-pointer" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close w-[18px] hover:cursor-pointer hidden" src="images/chevron-up-solid.svg" alt="close tab icon">
               </div>
-              <div class="accordion__panel">
-                <p class="panel__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              <div class="accordion__panel max-h-0 overflow-hidden panel-transition">
+                <p class="panel__copy text-grey-600/60 leading-7 pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                   justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
               </div>
             </div>
 
-            <div class="faq__accordion">
-              <div class="accordion__tab flex justify-between items-center p-1">
+            <div class="faq__accordion border-b border-b-grey-600">
+              <div class="accordion__tab flex justify-between items-center py-4">
                 <h3 class="tab__title">How can I request a new browser?</h3>
-                <img class="tab__open" src="images/icon-arrow.svg" alt="open tab icon">
-                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+                <img class="tab__open hover:cursor-pointer" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close w-[18px] hover:cursor-pointer hidden" src="images/chevron-up-solid.svg" alt="close tab icon">
               </div>
-              <div class="accordion__panel">
-                <p class="panel__copy">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              <div class="accordion__panel max-h-0 overflow-hidden panel-transition">
+                <p class="panel__copy text-grey-600/60 leading-7 pb-4">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
                   Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                   ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
                   Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
               </div>
             </div>
 
-            <div class="faq__accordion">
-              <div class="accordion__tab flex justify-between items-center p-1">
+            <div class="faq__accordion border-b border-b-grey-600">
+              <div class="accordion__tab flex justify-between items-center py-4">
                 <h3 class="tab__title">Is there a mobile app?</h3>
-                <img class="tab__open" src="images/icon-arrow.svg" alt="open tab icon">
-                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+                <img class="tab__open hover:cursor-pointer" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close w-[18px] hover:cursor-pointer hidden" src="images/chevron-up-solid.svg" alt="close tab icon">
               </div>
-              <div class="accordion__panel">
-                <p class="panel__copy">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              <div class="accordion__panel max-h-0 overflow-hidden panel-transition">
+                <p class="panel__copy text-grey-600/60 leading-7 pb-4">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
                   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
                     sollicitudin ex et ultricies bibendum.</p>
               </div>
             </div>
 
-            <div class="faq__accordion">
-              <div class="accordion__tab flex justify-between items-center p-1">
+            <div class="faq__accordion border-b border-b-grey-600">
+              <div class="accordion__tab flex justify-between items-center py-4">
                 <h3 class="tab__title">What about other Chromium browsers?</h3>
-                <img class="tab__open hover:pointer" src="images/icon-arrow.svg" alt="open tab icon">
-                <img class="tab__close" src="images/icon-close.svg" alt="close tab icon">
+                <img class="tab__open hover:cursor-pointer" src="images/icon-arrow.svg" alt="open tab icon">
+                <img class="tab__close w-[18px] hover:cursor-pointer hidden" src="images/chevron-up-solid.svg" alt="close tab icon">
               </div>
-              <div class="accordion__panel">
-                <p class="panel__copy">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              <div class="accordion__panel max-h-0 overflow-hidden panel-transition">
+                <p class="panel__copy text-grey-600/60 leading-7 pb-4">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
                     vitae neque eget nisl gravida pellentesque non ut velit.</p>
               </div>
             </div>
           </div>
 
+          <div class="accordion__btn-container flex justify-center py-4">
+            <a class="accordion__btn p-3 rounded-md bg-blue-600 text-white font-medium" href="">More Info</a>
+          </div>
+
         </section>
     </main>
+    <section class="contact w-full flex flex-col items-center gap-4 bg-blue-600 p-5">
+      <div class="contact__copy">
+        <p class="contact__subtitle">35,000+ already joined</p>
+        <h3 class="contact__title">Stay up-to-date with what we&#39;re doing</h3>
+      </div>
+    </section>
   </div>
   <!-- Features
   Pricing
@@ -204,11 +214,11 @@
  
   
 
-  More Info
+  
 
-  35,000+ already joined
+  
 
-  Stay up-to-date with what we&#39;re doing
+  
 
   Contact Us
 
