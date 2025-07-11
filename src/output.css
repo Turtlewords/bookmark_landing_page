@@ -8,13 +8,20 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-400: #FA5959;
     --color-blue-600: #5267DF;
+    --color-blue-950: #242A45;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
     --text-4xl: 2.25rem;
+    --font-weight-light: 300;
     --font-weight-medium: 500;
+    --radius-sm: 0.25rem;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
@@ -215,14 +222,14 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .-mt-10 {
+    margin-top: calc(var(--spacing) * -10);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
-  }
-  .mb-100 {
-    margin-bottom: calc(var(--spacing) * 100);
   }
   .block {
     display: block;
@@ -272,6 +279,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -292,6 +302,9 @@
   }
   .rounded-md {
     border-radius: var(--radius-md);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
   }
   .rounded-l-full {
     border-top-left-radius: calc(infinity * 1px);
@@ -322,8 +335,17 @@
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
+  .bg-blue-950 {
+    background-color: var(--color-blue-950);
+  }
   .bg-grey-50 {
     background-color: var(--color-grey-50);
+  }
+  .bg-red-400 {
+    background-color: var(--color-red-400);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -333,6 +355,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
@@ -359,13 +384,25 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl\/10 {
+    font-size: var(--text-3xl);
+    line-height: calc(var(--spacing) * 10);
+  }
   .text-4xl\/10 {
     font-size: var(--text-4xl);
     line-height: calc(var(--spacing) * 10);
   }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
     line-height: calc(var(--spacing) * 7);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);

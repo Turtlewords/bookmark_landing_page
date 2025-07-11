@@ -1,5 +1,10 @@
 const open = document.querySelectorAll(".tab__open");
 const close = document.querySelectorAll(".tab__close");
+const submitBtn = document.querySelector(".contact-form__submit-btn");
+
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+})
 
 for (let i = 0; i < open.length; i++) {
     open[i].addEventListener("click", function() {

@@ -11,7 +11,7 @@
   
 </head>
 <body class="font-(family-name:--font-rubik)">
-  <div class="container flex flex-col gap-10 mb-100 items-center">
+  <div class="container flex flex-col gap-10 items-center">
     <header class="header w-full flex justify-between items-center p-8">
       <img class="header__img" src="images/logo-bookmark.svg" alt="bookmark logo">
       <img class="header__hamburger" src="images/icon-hamburger.svg" alt="hamburger menu">
@@ -183,11 +183,27 @@
         </section>
     </main>
     <section class="contact w-full flex flex-col items-center gap-4 bg-blue-600 p-5">
-      <div class="contact__copy">
-        <p class="contact__subtitle">35,000+ already joined</p>
-        <h3 class="contact__title">Stay up-to-date with what we&#39;re doing</h3>
+      <div class="contact__copy text-center">
+        <p class="contact__subtitle text-sm text-white">35,000+ already joined</p>
+        <h3 class="contact__title text-white text-3xl/10 font-medium">Stay up-to-date with what we&#39;re doing</h3>
       </div>
+      <form class="contact-form flex flex-col gap-4">
+        <input class="contact-form__email bg-white p-3 rounded-sm" type="email" placeholder="example@email/com">
+        <button class="contact-form__submit-btn bg-red-400 text-white p-3 rounded-sm" type="submit">Contact Us</button>
+      </form>
     </section>
+    <footer class="footer w-full bg-blue-950 flex flex-col gap-6 justify-center items-center -mt-10 p-6">
+      <img class="footer__logo" src="images/logo-bookmark.svg" alt="Bookmark logo">
+      <ul class="footer__nav-list flex flex-col gap-4">
+        <li class="nav-list__item"><a class="nav-list__link text-white font-light" href="">FEATURES</a></li>
+        <li class="nav-list__item"><a class="nav-list__link text-white font-light" href="">PRICING</a></li>
+        <li class="nav-list__item"><a class="nav-list__link text-white font-light" href="">CONTACT</a></li>
+      </ul>
+      <div class="footer__socials flex gap-10">
+        <img class="social__img-fb" src="images/icon-facebook.svg" alt="Facebook logo">
+        <img class="social__img-twitter" src="images/icon-twitter.svg" alt="Twitter logo">
+      </div>
+    </footer>
   </div>
   <!-- Features
   Pricing
@@ -207,25 +223,6 @@
   link that you can send at the click of a button.
 
   More Info-->
-
- 
-  
-
- 
-  
-
-  
-
-  
-
-  
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
-  
   <script src="src/index.js"></script>
 </body>
 </html>
