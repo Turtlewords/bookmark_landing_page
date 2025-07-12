@@ -45,34 +45,67 @@
         </div>
         <div class="features-list">
           <div class="features-list__item border-b border-t border-grey-600">
-            <button class="feautures-list__btn p-4 w-full text-center hover:cursor-pointer">Simple Bookmarking</button>
+            <button class="feautures-list__btn-1 p-4 w-full text-center hover:cursor-pointer">Simple Bookmarking</button>
           </div>
           <div class="features-list__item border-b border-grey-600">
-            <button class="feautures-list__btn p-4  w-full h-full text-center hover:cursor-pointer">Speedy Searching</button>
+            <button class="feautures-list__btn-2 p-4  w-full h-full text-center hover:cursor-pointer">Speedy Searching</button>
           </div>
           <div class="features-list__item  border-b border-grey-600">
-            <button class="feautures-list__btn p-4 w-full text-center hover:cursor-pointer">Easy Sharing</button>
+            <button class="feautures-list__btn-3 p-4 w-full text-center hover:cursor-pointer">Easy Sharing</button>
           </div>
         </div>
       </section>
 
       <!-- Features -->
-       <!-- Implement JS to switch between the three features -->
-       <section class="features flex flex-col gap-10 items-center">
-          <div class="features__img-container relative flex justify-center">
-            <img class="features__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-1.svg">
-            <div class="features__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
+       <!-- Featurses 1 -->
+       <section class="features-1 flex flex-col transition-opacity duration-300 gap-10 items-center">
+          <div class="features-1__img-container relative flex justify-center">
+            <img class="features-1__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-1.svg">
+            <div class="features-1__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
           </div>
-          <div class="features__content w-4/5 flex flex-col gap-10 text-center">
-            <h2 class="features-content__title text-4xl/10 font-medium">Bookmark in one click</h2>
-            <p class="features-content__copy text-grey-600/60">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          <div class="features-1__content w-4/5 flex flex-col gap-10 text-center">
+            <h2 class="features-1-content__title text-4xl/10 font-medium">Bookmark in one click</h2>
+            <p class="features-1-content__copy text-grey-600/60">Organize your bookmarks however you like. Our simple drag-and-drop interface 
                   gives you complete control over how you manage your favourite sites.</p>
-            <div class="features-content__buttons flex justify-center gap-4">
-              <a class="features-content-buttons--chrome p-3 rounded-md bg-blue-600 text-white font-medium" href="#">More Info</a>
+            <div class="features-1-content__buttons flex justify-center gap-4">
+              <a class="features-1-content-buttons--chrome p-3 rounded-md bg-blue-600 text-white font-medium" href="#">More Info</a>
             </div>
           </div>
        </section>
 
+       <!-- Features 2 -->
+
+       <section class="features-2 flex flex-col transition-opacity duration-300 gap-10 items-center opacity-0 hidden">
+          <div class="features-2__img-container relative flex justify-center">
+            <img class="features-2__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-2.svg">
+            <div class="features-2__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
+          </div>
+          <div class="features-2__content w-4/5 flex flex-col gap-10 text-center">
+            <h2 class="features-2-content__title text-4xl/10 font-medium">Intelligent search</h2>
+            <p class="features-2-content__copy text-grey-600/60">Our powerful search feature will help you find saved sites in no time at all. 
+                No need to trawl through all of your bookmarks.</p>
+            <div class="features-2-content__buttons flex justify-center gap-4">
+              <a class="features-2-content-buttons--chrome p-3 rounded-md bg-blue-600 text-white font-medium" href="#">More Info</a>
+            </div>
+          </div>
+       </section>
+
+       <!-- Features 3 -->
+
+       <section class="features-3 flex flex- transition-opacity duration-300 gap-10 items-center opacity-0 hidden">
+          <div class="features-3__img-container relative flex justify-center">
+            <img class="features-3__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-3.svg">
+            <div class="features-3__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
+          </div>
+          <div class="features-3__content w-4/5 flex flex-col gap-10 text-center">
+            <h2 class="features-3-content__title text-4xl/10 font-medium">Share your bookmarks</h2>
+            <p class="features-3-content__copy text-grey-600/60">Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.</p>
+            <div class="features-3-content__buttons flex justify-center gap-4">
+              <a class="features-3-content-buttons--chrome p-3 rounded-md bg-blue-600 text-white font-medium" href="#">More Info</a>
+            </div>
+          </div>
+       </section>
 
        <!-- Extensions -->
         <section class="extensions w-4/5 flex flex-col gap-10 text-center">
@@ -209,20 +242,8 @@
   Pricing
   Contact
   Login
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info-->
+  
+  -->
   <script src="src/index.js"></script>
 </body>
 </html>
