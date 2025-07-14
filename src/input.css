@@ -14,6 +14,20 @@
     --color-red-400: #FA5959;
 }
 
+@theme {
+    --animate-fade-in: fade-in 1s ease;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 100;
+        }
+    }
+}
+
 .panel-transition {
     transition: max-height 0.2s ease-out;
 }

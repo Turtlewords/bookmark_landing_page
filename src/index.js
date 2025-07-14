@@ -4,6 +4,8 @@ const open = document.querySelectorAll(".tab__open");
 const close = document.querySelectorAll(".tab__close");
 const submitBtn = document.querySelector(".contact-form__submit-btn");
 
+const features = document.querySelectorAll(".features");
+
 const feature1 = document.querySelector(".features-1");
 const feature2 = document.querySelector(".features-2");
 const feature3 = document.querySelector(".features-3");
@@ -15,15 +17,21 @@ const featuresBtn3 = document.querySelector(".feautures-list__btn-3");
 // Event Listeners
 
 featuresBtn1.addEventListener("click", () => {
-    feature1.classList.add("flex");
+    clearFeatureSections()
+    feature1.classList.remove("hidden");
+    feature1.classList.add("animate-(--animate-fade-in)");
 })
 
 featuresBtn2.addEventListener("click", () => {
-
+    clearFeatureSections()
+    feature2.classList.remove("hidden");
+    feature2.classList.add("animate-(--animate-fade-in)");
 })
 
 featuresBtn3.addEventListener("click", () => {
-
+    clearFeatureSections()
+    feature3.classList.remove("hidden");
+    feature3.classList.add("animate-(--animate-fade-in)");
 })
 
 submitBtn.addEventListener("click", (e) => {
@@ -49,5 +57,14 @@ for (let i = 0; i < open.length; i++) {
         close[i].classList.add("hidden");
         open[i].classList.add("block");
         open[i].classList.remove("hidden");
+    })
+}
+
+// functions
+
+function clearFeatureSections() {
+    features.forEach((feature) => {
+        feature.classList.add("opacity-0");
+        feature.classList.add("hidden");
     })
 }
