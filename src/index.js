@@ -5,6 +5,7 @@ const close = document.querySelectorAll(".tab__close");
 const submitBtn = document.querySelector(".contact-form__submit-btn");
 
 const features = document.querySelectorAll(".features");
+const featureBtns = document.querySelectorAll(".feature-btn")
 
 const feature1 = document.querySelector(".features-1");
 const feature2 = document.querySelector(".features-2");
@@ -18,20 +19,32 @@ const featuresBtn3 = document.querySelector(".feautures-list__btn-3");
 
 featuresBtn1.addEventListener("click", () => {
     clearFeatureSections()
+    clearFeatureBtns()
     feature1.classList.remove("hidden");
     feature1.classList.add("animate-(--animate-fade-in)");
+    featuresBtn1.classList.remove("border-transparent");
+    
+    featuresBtn1.classList.add("border-b-red-400");
 })
 
 featuresBtn2.addEventListener("click", () => {
     clearFeatureSections()
+    clearFeatureBtns()
     feature2.classList.remove("hidden");
     feature2.classList.add("animate-(--animate-fade-in)");
+    featuresBtn2.classList.remove("border-transparent");
+    
+    featuresBtn2.classList.add("border-b-red-400");
 })
 
 featuresBtn3.addEventListener("click", () => {
     clearFeatureSections()
+    clearFeatureBtns()
     feature3.classList.remove("hidden");
     feature3.classList.add("animate-(--animate-fade-in)");
+    featuresBtn3.classList.remove("border-transparent");
+    
+    featuresBtn3.classList.add("border-b-red-400");
 })
 
 submitBtn.addEventListener("click", (e) => {
@@ -66,5 +79,12 @@ function clearFeatureSections() {
     features.forEach((feature) => {
         feature.classList.add("opacity-0");
         feature.classList.add("hidden");
+    })
+}
+
+function clearFeatureBtns() {
+    featureBtns.forEach((btn) => {
+        btn.classList.remove("border-b-red-400");
+        btn.classList.add("border-transparent");
     })
 }
