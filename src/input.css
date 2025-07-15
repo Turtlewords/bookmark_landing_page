@@ -31,3 +31,7 @@
 .panel-transition {
     transition: max-height 0.2s ease-out;
 }
+
+.btn-border-transition {
+    transition: border-color 1s ease;
+}
