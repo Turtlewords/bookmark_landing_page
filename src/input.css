@@ -28,6 +28,20 @@
     }
 }
 
+@theme {
+    --animate-fade-out: fade-out 1s ease;
+
+    @keyframes fade-out {
+        from {
+            opacity: 100;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+}
+
 .panel-transition {
     transition: max-height 0.2s ease-out;
 }

@@ -1,5 +1,9 @@
 // Elements
 
+const hamburger = document.querySelector(".header__hamburger");
+const closeSlideMenuBtn = document.querySelector(".slide-menu-hero__close-btn");
+const slideMenu = document.querySelector(".slide-menu-container");
+
 const open = document.querySelectorAll(".tab__open");
 const close = document.querySelectorAll(".tab__close");
 const submitBtn = document.querySelector(".contact-form__submit-btn");
@@ -16,6 +20,15 @@ const featuresBtn2 = document.querySelector(".feautures-list__btn-2");
 const featuresBtn3 = document.querySelector(".feautures-list__btn-3");
 
 // Event Listeners
+
+hamburger.addEventListener("click", () => {
+    slideMenu.classList.add("animate-(--animate-fade-in)");
+    
+})
+
+closeSlideMenuBtn.addEventListener("click", () => {
+    slideMenu.classList.add("animate-(--animate-fade-out)");
+})
 
 featuresBtn1.addEventListener("click", () => {
     clearFeatureSections()
