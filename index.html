@@ -11,7 +11,7 @@
   
 </head>
 <body class="font-(family-name:--font-rubik)">
-  <div class="container flex flex-col gap-10 items-center">
+  <div class="container flex flex-col gap-10 items-center relative">
     <header class="header w-full flex justify-between items-center p-8">
       <img class="header__img" src="images/logo-bookmark.svg" alt="bookmark logo">
       <img class="header__hamburger" src="images/icon-hamburger.svg" alt="hamburger menu">
@@ -216,7 +216,7 @@
         </section>
     </main>
     <section class="contact w-full flex flex-col items-center gap-8 bg-blue-600 py-12 px-8">
-      <div class="contact__copy text-center">
+      <div class="contact__copy flex flex-col gap-3 text-center">
         <p class="contact__subtitle text-sm text-white">35,000+ already joined</p>
         <h3 class="contact__title text-white text-3xl/10 font-medium">Stay up-to-date with what we&#39;re doing</h3>
       </div>
@@ -237,13 +237,29 @@
         <img class="social__img-twitter" src="images/icon-twitter.svg" alt="Twitter logo">
       </div>
     </footer>
+
+    <!-- Slide Menu -->
+     <div class="slide-menu-container flex flex-col justify-between absolute inset-0 bg-blue-950/80 z-2 p-8 text-white">
+      <div class="slide-menu-top flex flex-col">
+        <div class="slide-menu-hero flex justify-between items-center">
+          <img class="slide-menu-hero__logo" src="images/logo-bookmark.svg" alt="bookmark logo">
+          <img class="slide-menu-hero__close-btn" src="images/icon-close.svg" alt="close icon">
+        </div>
+        <nav class="slide-menu-nav">
+          <ul class="nav__list flex flex-col items-center gap-4">
+            <li class="slide-menu-nav__list-item"><a class="nav-list__link text-2xl font-light tracking-widest border-t-1 border-gray-300 p-4" href="">FEATURES</a></li>
+            <li class="slide-menu-nav__list-item"><a class="nav-list__link text-2xl font-light tracking-widest border-t-1 border-gray-300 p-4" href="">PRICING</a></li>
+            <li class="slide-menu-nav__list-item"><a class="nav-list__link text-2xl font-light tracking-widest border-y-1 border-gray-300 p-4" href="">CONTACT</a></li>
+          </ul>
+        </nav>
+        <button class="slide-menu__login-btn">LOGIN</button>
+      </div>
+      <div class="slide-menu-bottom">
+        
+      </div>
+     </div>
   </div>
-  <!-- Features
-  Pricing
-  Contact
-  Login
-  
-  -->
+
   <script src="src/index.js"></script>
 </body>
 </html>
