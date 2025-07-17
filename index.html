@@ -239,23 +239,24 @@
     </footer>
 
     <!-- Slide Menu -->
-     <div class="slide-menu-container flex flex-col justify-between absolute inset-0 bg-blue-950/80 z-2 p-8 text-white transition-opacity duration-300">
-      <div class="slide-menu-top flex flex-col">
-        <div class="slide-menu-hero flex justify-between items-center">
-          <img class="slide-menu-hero__logo" src="images/logo-bookmark.svg" alt="bookmark logo">
+     <div class="slide-menu-container flex flex-col justify-between fixed inset-0 bg-blue-950/90 z-2 md:p-12 p-8 text-white transition-opacity duration-300 hidden">
+      <div class="slide-menu-top flex flex-col gap-6">
+        <div class="slide-menu-hero flex justify-between items-center mb-6">
+          <img class="slide-menu-hero__logo" src="images/logo-bookmark-white.png" alt="bookmark logo">
           <img class="slide-menu-hero__close-btn" src="images/icon-close.svg" alt="close icon">
         </div>
         <nav class="slide-menu-nav">
-          <ul class="nav__list flex flex-col items-center gap-4">
-            <li class="slide-menu-nav__list-item"><a class="nav-list__link text-2xl font-light tracking-widest border-t-1 border-gray-300 p-4" href="">FEATURES</a></li>
-            <li class="slide-menu-nav__list-item"><a class="nav-list__link text-2xl font-light tracking-widest border-t-1 border-gray-300 p-4" href="">PRICING</a></li>
-            <li class="slide-menu-nav__list-item"><a class="nav-list__link text-2xl font-light tracking-widest border-y-1 border-gray-300 p-4" href="">CONTACT</a></li>
+          <ul class="nav__list flex flex-col items-center">
+            <li class="slide-menu-nav__list-item w-full flex justify-center border-t-1 border-gray-300 md:p-8 p-4"><a class="nav-list__link text-2xl font-light tracking-widest" href="">FEATURES</a></li>
+            <li class="slide-menu-nav__list-item w-full flex justify-center border-t-1 border-gray-300 md:p-8 p-4"><a class="nav-list__link text-2xl font-light tracking-widest " href="">PRICING</a></li>
+            <li class="slide-menu-nav__list-item flex justify-center w-full border-y-1 border-gray-300 md:p-8 p-4"><a class="nav-list__link text-2xl font-light tracking-widest " href="">CONTACT</a></li>
           </ul>
         </nav>
-        <button class="slide-menu__login-btn">LOGIN</button>
+        <button class="slide-menu__login-btn p-2 border-2 text-2xl border-white rounded-md">LOGIN</button>
       </div>
-      <div class="slide-menu-bottom">
-        
+      <div class="slide-menu-bottom flex justify-center items-end gap-10">
+        <img class="slide-menu-bottom__fb-img" src="images/icon-facebook.svg" alt="facebook icon">
+        <img class="slide-menu-bottom__twitter-img" src="images/icon-twitter.svg" alt="twitter icon">
       </div>
      </div>
   </div>

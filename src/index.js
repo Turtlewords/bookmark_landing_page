@@ -22,12 +22,19 @@ const featuresBtn3 = document.querySelector(".feautures-list__btn-3");
 // Event Listeners
 
 hamburger.addEventListener("click", () => {
+    slideMenu.classList.remove("hidden")
+    slideMenu.classList.remove("animate-(--animate-fade-out)");
     slideMenu.classList.add("animate-(--animate-fade-in)");
     
 })
 
 closeSlideMenuBtn.addEventListener("click", () => {
+    slideMenu.classList.remove("animate-(--animate-fade-in)");
     slideMenu.classList.add("animate-(--animate-fade-out)");
+    setTimeout(() => {
+        slideMenu.classList.add("hidden")
+    }, 1000);
+    
 })
 
 featuresBtn1.addEventListener("click", () => {
