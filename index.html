@@ -11,8 +11,8 @@
   
 </head>
 <body class="font-(family-name:--font-rubik)">
-  <div class="container flex flex-col gap-10 items-center relative">
-    <header class="header w-full flex justify-between items-center p-8">
+  <div class="container w-full flex flex-col gap-10 items-center relative">
+    <header class="header w-full flex justify-between items-center p-8 md:w-4/5">
       <img class="header__img" src="images/logo-bookmark.svg" alt="bookmark logo">
       <img class="header__hamburger" src="images/icon-hamburger.svg" alt="hamburger menu">
     </header>
@@ -21,7 +21,7 @@
         <!-- Hero -->
 
       <section class="hero flex flex-col gap-10 items-center">
-        <div class="hero__img-container relative">
+        <div class="hero__img-container w-full relative flex justify-center">
           <img class="hero__img relative z-2" src="images/illustration-hero.svg">
           <div class="hero__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-l-full bottom-0 right-0"></div>
         </div>
@@ -43,15 +43,15 @@
           <p class="features-head__content__copy text-grey-600/60">Our aim is to make it quick and easy for you to access your favourite websites. 
             Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-        <div class="features-list">
-          <div class="features-list__item flex justify-center border-b border-t border-grey-600">
-            <button class="feature-btn feautures-list__btn-1 p-4 w-2/3 text-center btn-border-transition border-b-4 border-transparent hover:cursor-pointer">Simple Bookmarking</button>
+        <div class="features-list md:flex md:justify-stretch">
+          <div class="features-list__item flex justify-center border-b border-t border-grey-600 md:border-t-0 md:w-1/3">
+            <button class="feature-btn feautures-list__btn-1 p-4 w-2/3 text-center btn-border-transition border-b-4 border-transparent hover:cursor-pointer md:w-full">Simple Bookmarking</button>
           </div>
-          <div class="features-list__item flex justify-center border-b border-grey-600">
-            <button class="feature-btn feautures-list__btn-2 p-4 w-2/3 h-full text-center btn-border-transition border-b-4 border-transparent hover:cursor-pointer">Speedy Searching</button>
+          <div class="features-list__item flex justify-center border-b border-grey-600 md:w-1/3">
+            <button class="feature-btn feautures-list__btn-2 p-4 w-2/3 h-full text-center btn-border-transition border-b-4 border-transparent hover:cursor-pointer md:w-full">Speedy Searching</button>
           </div>
-          <div class="features-list__item flex justify-center border-b border-grey-600">
-            <button class="feature-btn feautures-list__btn-3 p-4 w-2/3 text-center btn-border-transition border-b-4 border-transparent hover:cursor-pointer">Easy Sharing</button>
+          <div class="features-list__item flex justify-center border-b border-grey-600 md:w-1/3">
+            <button class="feature-btn feautures-list__btn-3 p-4 w-2/3 text-center btn-border-transition border-b-4 border-transparent hover:cursor-pointer md:w-full">Easy Sharing</button>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@
       <!-- Features -->
        <!-- Featurses 1 -->
        <section class="features features-1 flex flex-col transition-opacity duration-300 gap-10 opacity-100 items-center">
-          <div class="features-1__img-container relative flex justify-center">
+          <div class="features-1__img-container relative flex justify-center w-full">
             <img class="features-1__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-1.svg">
             <div class="features-1__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
           </div>
@@ -76,7 +76,7 @@
        <!-- Features 2 -->
 
        <section class="features features-2 flex flex-col transition-opacity duration-300 gap-10 items-center opacity-100 hidden">
-          <div class="features-2__img-container relative flex justify-center">
+          <div class="features-2__img-container relative flex justify-center w-full">
             <img class="features-2__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-2.svg">
             <div class="features-2__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
           </div>
@@ -93,7 +93,7 @@
        <!-- Features 3 -->
 
        <section class="features features-3 flex flex-col transition-opacity duration-300 gap-10 items-center opacity-100 hidden">
-          <div class="features-3__img-container relative flex justify-center">
+          <div class="features-3__img-container relative flex justify-center w-full">
             <img class="features-3__img relative z-2 w-4/5 my-10" src="images/illustration-features-tab-3.svg">
             <div class="features-3__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
           </div>
@@ -114,10 +114,10 @@
             <p class="extensions-hero__copy text-grey-600/60">We&#39ve got more browsers in the pipeline. Please do let us know if you&#39ve 
                 got a favourite you&#39d like us to prioritize.</p>
           </div>
-          <div class="extensions-container flex flex-col gap-10">
+          <div class="extensions-container flex flex-col gap-10 md:flex-row">
             <!-- Card 1 -->
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg">
-              <img  class="extensions-card__img my-6" src="images/logo-chrome.svg" alt="Chrome logo">
+            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-1">
+              <img  class="extensions-card__img my-6 md:my-2" src="images/logo-chrome.svg" alt="Chrome logo">
               <h3 class="extensions-card__title text-2xl font-medium">Add to Chrome</h3>
               <p class="extensions-card__copy text-grey-600/60">Minimum version 62</p>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
@@ -126,8 +126,8 @@
 
             <!-- Card 2 -->
 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg">
-              <img  class="extensions-card__img my-6" src="images/logo-firefox.svg" alt="Firefox logo">
+            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-1">
+              <img  class="extensions-card__img my-6 md:my-2" src="images/logo-firefox.svg" alt="Firefox logo">
               <h3 class="extensions-card__title text-2xl font-medium">Add to Firefox</h3>
               <p class="extensions-card__copy text-grey-600/60">Minimum version 55</p>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
@@ -136,8 +136,8 @@
 
             <!-- Card 3 -->
 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg">
-              <img  class="extensions-card__img my-6" src="images/logo-opera.svg" alt="Opera logo">
+            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-1">
+              <img  class="extensions-card__img my-6 md:my-2" src="images/logo-opera.svg" alt="Opera logo">
               <h3 class="extensions-card__title text-2xl font-medium">Add to Opera</h3>
               <p class="extensions-card__copy text-grey-600/60">Minimum version 46</p>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
@@ -239,8 +239,8 @@
     </footer>
 
     <!-- Slide Menu -->
-     <div class="slide-menu-container flex flex-col justify-between fixed inset-0 bg-blue-950/90 z-2 md:p-12 p-8 text-white transition-opacity duration-300 hidden">
-      <div class="slide-menu-top flex flex-col gap-6">
+     <div class="slide-menu-container flex flex-col justify-between items-center fixed inset-0 bg-blue-950/90 z-2 md:p-12 p-8 text-white transition-opacity duration-300 hidden">
+      <div class="slide-menu-top flex flex-col gap-6 md:w-4/5">
         <div class="slide-menu-hero flex justify-between items-center mb-6">
           <img class="slide-menu-hero__logo" src="images/logo-bookmark-white.png" alt="bookmark logo">
           <img class="slide-menu-hero__close-btn" src="images/icon-close.svg" alt="close icon">
