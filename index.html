@@ -23,7 +23,7 @@
       <section class="hero flex flex-col gap-10 items-center">
         <div class="hero__img-container w-full relative flex justify-center">
           <img class="hero__img relative z-2" src="images/illustration-hero.svg">
-          <div class="hero__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-l-full bottom-0 right-0"></div>
+          <div class="hero__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-l-full bottom-0 right-0 md:h-7/10"></div>
         </div>
         <div class="hero__content w-4/5 flex flex-col gap-10 text-center">
           <h1 class="hero-content__title text-4xl/10 font-medium">A Simple Bookmark Manager</h1>
@@ -60,7 +60,7 @@
        <!-- Features 1 -->
        <section class="features features-1 flex flex-col transition-opacity duration-300 gap-10 opacity-100 items-center">
           <div class="features-1__img-container relative flex justify-center w-full">
-            <img class="features-1__img relative z-2 w-4/5 my-10 md:w-3/5" src="images/illustration-features-tab-1.svg">
+            <img class="features-1__img relative z-2 w-4/5 my-10 md:w-7/10 md:-right-8 md:-top-6" src="images/illustration-features-tab-1.svg">
             <div class="features-1__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0"></div>
           </div>
           <div class="features-1__content w-4/5 flex flex-col gap-10 text-center">
@@ -78,7 +78,7 @@
        <section class="features features-2 flex flex-col transition-opacity duration-300 gap-10 items-center opacity-100 hidden">
           <div class="features-2__img-container relative flex justify-center w-full">
             <img class="features-2__img relative z-2 w-4/5 my-10 md:w-3/5" src="images/illustration-features-tab-2.svg">
-            <div class="features-2__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0 md:w-7/10"></div>
+            <div class="features-2__img-container--background bg-blue-600 absolute h-4/5 w-4/5 rounded-r-full bottom-0 left-0 md:w-3/5"></div>
           </div>
           <div class="features-2__content w-4/5 flex flex-col gap-10 text-center">
             <h2 class="features-2-content__title text-4xl/10 font-medium">Intelligent search</h2>
@@ -114,42 +114,46 @@
             <p class="extensions-hero__copy text-grey-600/60">We&#39ve got more browsers in the pipeline. Please do let us know if you&#39ve 
                 got a favourite you&#39d like us to prioritize.</p>
           </div>
-          <div class="extensions-container flex flex-col gap-10 md:flex-row">
-            <!-- Card 1 -->
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg">
+          <div class="extensions-container flex flex-col gap-10 md:flex-row md:gap-2">
+            <!-- Card 1 --> 
+            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-0">
               <div class="extensions-card__top flex flex-col gap-5 items-center md:gap-1 md:p-2">
-                <img  class="extensions-card__img my-6 md:my-2" src="images/logo-chrome.svg" alt="Chrome logo">
+                <img  class="extensions-card__img my-6 md:my-2 md:w-3/8" src="images/logo-chrome.svg" alt="Chrome logo">
                 <h3 class="extensions-card__title text-2xl font-medium">Add to Chrome</h3>
                 <p class="extensions-card__copy text-grey-600/60">Minimum version 62</p>
               </div>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <div class="extensions-card__bottom flex md:p-2">
-                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white font-medium md:px-1 md:py-0" tabindex="0" href="">Add & Install Extension</a> 
+              <div class="extensions-card__bottom flex md:p-3">
+                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:py-1 md:px-1 md:mb-0" tabindex="0" href="">Add & Install Extension</a> 
               </div>
             </div>
 
             <!-- Card 2 -->
 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-1">
-              <div class="extensions-card__top"></div>
-                <img  class="extensions-card__img my-6 md:my-2" src="images/logo-firefox.svg" alt="Firefox logo">
+            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-0">
+              <div class="extensions-card__top flex flex-col gap-5 items-center md:gap-1 md:p-2">
+                <img  class="extensions-card__img my-6 md:my-2 md:w-3/8" src="images/logo-firefox.svg" alt="Firefox logo">
                 <h3 class="extensions-card__title text-2xl font-medium">Add to Firefox</h3>
                 <p class="extensions-card__copy text-grey-600/60">Minimum version 55</p>
-
+              </div>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-
-                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white font-medium md:px-1" tabindex="0" href="">Add & Install Extension</a>
-
+              <div class="extensions-card__bottom flex md:p-3">
+                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:px-1 md:py-1 md:mb-0" tabindex="0" href="">Add & Install Extension</a>
+              </div>
             </div>
 
             <!-- Card 3 -->
 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-1">
-              <img  class="extensions-card__img my-6 md:my-2" src="images/logo-opera.svg" alt="Opera logo">
-              <h3 class="extensions-card__title text-2xl font-medium">Add to Opera</h3>
-              <p class="extensions-card__copy text-grey-600/60">Minimum version 46</p>
+            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-0">
+              <div class="extensions-card__top flex flex-col gap-5 items-center md:gap-1 md:p-2">
+                <img  class="extensions-card__img my-6 md:my-2 md:w-3/8" src="images/logo-opera.svg" alt="Opera logo">
+                <h3 class="extensions-card__title text-2xl font-medium">Add to Opera</h3>
+                <p class="extensions-card__copy text-grey-600/60">Minimum version 46</p>
+              </div>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white font-medium md:px-1" tabindex="0" href="">Add & Install Extension</a>
+              <div class="extensions-card__bottom flex md:p-3">
+                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:px-1 md:py-1 md:mb-0" tabindex="0" href="">Add & Install Extension</a>
+              </div>
             </div>
 
           </div>
@@ -225,10 +229,10 @@
     </main>
     <section class="contact w-full flex flex-col items-center gap-8 bg-blue-600 py-12 px-8">
       <div class="contact__copy flex flex-col gap-3 text-center">
-        <p class="contact__subtitle text-sm text-white">35,000+ already joined</p>
+        <p class="contact__subtitle text-sm text-white md:text-lg">35,000+ already joined</p>
         <h3 class="contact__title text-white text-3xl/10 font-medium">Stay up-to-date with what we&#39;re doing</h3>
       </div>
-      <form class="contact-form w-full flex flex-col gap-4">
+      <form class="contact-form w-full flex flex-col gap-4 md:flex-row">
         <input class="contact-form__email bg-white p-3 rounded-sm" type="email" placeholder="example@email/com">
         <button class="contact-form__submit-btn bg-red-400 text-white font-medium p-3 rounded-sm" type="submit">Contact Us</button>
       </form>
