@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="src/output.css">
   
 </head>
-<body class="font-(family-name:--font-rubik)">
+<body class="font-(family-name:--font-rubik) w-screen">
   <div class="container w-full flex flex-col gap-10 items-center relative">
-    <header class="header w-full flex justify-between items-center p-8 md:w-4/5">
+    <header class="header w-full flex justify-between items-center p-8 md:w-4/5 xl:px-0">
       <img class="header__img" src="images/logo-bookmark.svg" alt="bookmark logo">
       <img class="header__hamburger xl:hidden" src="images/icon-hamburger.svg" alt="hamburger menu">
-      <div class="header__desktop-nav-container hidden xl:flex xl:items-center">
+      <div class="header__desktop-nav-container hidden xl:flex xl:items-center xl:gap-4">
         <nav class="desktop-menu-nav">
           <ul class="nav__list flex items-center">
             <li class="slide-menu-nav__list-item w-full flex justify-center md:p-8 p-4"><a class="nav-list__link text-xl" href="">FEATURES</a></li>
@@ -124,45 +124,45 @@
             <p class="extensions-hero__copy text-grey-600/60">We&#39ve got more browsers in the pipeline. Please do let us know if you&#39ve 
                 got a favourite you&#39d like us to prioritize.</p>
           </div>
-          <div class="extensions-container flex flex-col gap-10 md:flex-row md:gap-2">
+          <div class="extensions-container flex flex-col relative gap-10 md:flex-row md:gap-2 xl:gap-14 xl:mb-24">
             <!-- Card 1 --> 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-0">
+            <div class="extensions__card flex flex-col relative gap-5 items-center shadow-sm rounded-lg md:gap-0 xl:gap-4">
               <div class="extensions-card__top flex flex-col gap-5 items-center md:gap-1 md:p-2">
                 <img  class="extensions-card__img my-6 md:my-2 md:w-3/8" src="images/logo-chrome.svg" alt="Chrome logo">
                 <h3 class="extensions-card__title text-2xl font-medium">Add to Chrome</h3>
                 <p class="extensions-card__copy text-grey-600/60">Minimum version 62</p>
               </div>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <div class="extensions-card__bottom flex md:p-3">
-                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:py-1 md:px-1 md:mb-0" tabindex="0" href="">Add & Install Extension</a> 
+              <div class="extensions-card__bottom flex md:p-3 xl:p-5">
+                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:py-1 md:px-1 md:mb-0 xl:py-3 xl:px-6" tabindex="0" href="">Add & Install Extension</a> 
               </div>
             </div>
 
             <!-- Card 2 -->
 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-0">
+            <div class="extensions__card flex flex-col relative gap-5 items-center shadow-sm rounded-lg md:gap-0 xl:gap-4 xl:top-12">
               <div class="extensions-card__top flex flex-col gap-5 items-center md:gap-1 md:p-2">
                 <img  class="extensions-card__img my-6 md:my-2 md:w-3/8" src="images/logo-firefox.svg" alt="Firefox logo">
                 <h3 class="extensions-card__title text-2xl font-medium">Add to Firefox</h3>
                 <p class="extensions-card__copy text-grey-600/60">Minimum version 55</p>
               </div>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <div class="extensions-card__bottom flex md:p-3">
-                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:px-1 md:py-1 md:mb-0" tabindex="0" href="">Add & Install Extension</a>
+              <div class="extensions-card__bottom flex md:p-3 xl:p-5">
+                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:px-1 md:py-1 md:mb-0 xl:py-3 xl:px-6" tabindex="0" href="">Add & Install Extension</a>
               </div>
             </div>
 
             <!-- Card 3 -->
 
-            <div class="extensions__card flex flex-col gap-5 items-center shadow-sm rounded-lg md:gap-0">
+            <div class="extensions__card flex flex-col relative gap-5 items-center shadow-sm rounded-lg md:gap-0 xl:gap-4 xl:top-24">
               <div class="extensions-card__top flex flex-col gap-5 items-center md:gap-1 md:p-2">
                 <img  class="extensions-card__img my-6 md:my-2 md:w-3/8" src="images/logo-opera.svg" alt="Opera logo">
                 <h3 class="extensions-card__title text-2xl font-medium">Add to Opera</h3>
                 <p class="extensions-card__copy text-grey-600/60">Minimum version 46</p>
               </div>
               <img class="extensions-card__img-dots" src="images/bg-dots.svg" alt="dotted border">
-              <div class="extensions-card__bottom flex md:p-3">
-                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:px-1 md:py-1 md:mb-0" tabindex="0" href="">Add & Install Extension</a>
+              <div class="extensions-card__bottom flex md:p-3 xl:p-5">
+                <a class="extensions-card__btn py-3 px-6 mb-6 rounded-md bg-blue-600 text-white md:px-1 md:py-1 md:mb-0 xl:py-3 xl:px-6" tabindex="0" href="">Add & Install Extension</a>
               </div>
             </div>
 
@@ -253,7 +253,7 @@
     <!-- Footer -->
     <!-- flex flex-col gap-10 justify-center items-center -mt-10 p-12 md:flex-row md:justify-between xl:justify-normal -->
     <footer class="footer w-full bg-blue-950 -mt-10 flex justify-center">
-      <div class="footer__container flex flex-col gap-10 justify-center items-center  p-12 md:flex-row md:justify-between xl:justify-normal xl:w-4/5">
+      <div class="footer__container flex flex-col gap-10 justify-center items-center  p-12 md:flex-row md:justify-between xl:justify-normal xl:w-4/5 xl:px-0">
         <img class="footer__logo" src="images/logo-bookmark-white.png" alt="Bookmark logo">
         <ul class="footer__nav-list flex flex-col gap-6 md:flex-row">
           <li class="nav-list__item"><a class="nav-list__link text-white font-light" href="">FEATURES</a></li>
@@ -269,7 +269,7 @@
 
     <!-- Slide Menu -->
      <div class="slide-menu-container flex flex-col justify-between items-center fixed inset-0 bg-blue-950/90 z-2 md:p-12 p-8 text-white transition-opacity duration-300 hidden">
-      <div class="slide-menu-top flex flex-col gap-6 md:w-4/5">
+      <div class="slide-menu-top w-full flex flex-col gap-6 md:w-4/5">
         <div class="slide-menu-hero flex justify-between items-center mb-6">
           <img class="slide-menu-hero__logo" src="images/logo-bookmark-white.png" alt="bookmark logo">
           <img class="slide-menu-hero__close-btn" src="images/icon-close.svg" alt="close icon">

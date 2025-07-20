@@ -278,6 +278,9 @@
   .w-full {
     width: 100%;
   }
+  .w-screen {
+    width: 100vw;
+  }
   .grow {
     flex-grow: 1;
   }
@@ -690,6 +693,21 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .xl\:top-12 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:top-24 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 24);
+    }
+  }
+  .xl\:mb-24 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 24);
+    }
+  }
   .xl\:ml-auto {
     @media (width >= 80rem) {
       margin-left: auto;
@@ -728,6 +746,36 @@
   .xl\:justify-normal {
     @media (width >= 80rem) {
       justify-content: normal;
+    }
+  }
+  .xl\:gap-4 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .xl\:gap-14 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 14);
+    }
+  }
+  .xl\:p-5 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .xl\:px-0 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:px-6 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .xl\:py-3 {
+    @media (width >= 80rem) {
+      padding-block: calc(var(--spacing) * 3);
     }
   }
 }
